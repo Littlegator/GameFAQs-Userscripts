@@ -12,14 +12,6 @@
 /* 
     The MIT License (MIT)
 
-    This greasemonkey script for GameFAQs converts image and webm
-    links into their embedded form. It can be considered as a spiritual successor
-    to text-to-image for GameFAQs. Many of its features are inspired from appchan x
-    by zixaphir at http://zixaphir.github.io/appchan-x/.
-    
-    Copyright (c) 2015 FightingGames@gamefaqs <adrenalinebionicarm@gmail.com>
-    Copyright (c) 2015 FeaturingDante@gamefaqs <featuringDante@gmail.com>
-
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
     in the Software without restriction, including without limitation the rights
