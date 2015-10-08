@@ -55,3 +55,4 @@ function addGlobalStyle(css) {
 }
 
 addGlobalStyle('span.postaction { margin-left: 5px ! important; }');
+addGlobalStyle('div.newbeta { margin-top: 0px ! important; }');
