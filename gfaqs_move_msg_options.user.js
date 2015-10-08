@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name         GameFAQs Alt+Z Hotkey
-// @namespace    gfaqs_hotkey
-// @version      1.0.1
-// @description  GameFAQs hotkey to post message or submit edit
+// @name         GameFAQs Move Message Options
+// @namespace    gfaqs_movoptions
+// @version      1.0
+// @description  Moves the links for delete, close, edit, report to post header
 // @author       Littlegator
 // @grant        none
-// @downloadURL http://gates.coffee/gfaqs_hotkey.user.js
+// @downloadURL http://gates.coffee/gfaqs_move_msg_options.user.js
 // @include http://www.gamefaqs.com/boards/*
 // ==/UserScript==
-
+ 
 /* 
     The MIT License (MIT)
 
@@ -32,17 +32,23 @@
 
 */
 
-$.alt = function(key, callback, args) {
-    $(document).keydown(function(e) {
-        if(!args) args=[]; // IE barks when args is null 
+var allPosts = document.querySelectorAll ("td.msg");
 
-        if(e.keyCode == key.charCodeAt(0) && e.altKey) {
-            callback.apply(this, args);
-            return false;
-        }
-    });        
-};
+for (var J = allPosts.length - 1;  J >= 0;  --J) {
+    var curOptions = allPosts[J].querySelector("span.options");
+    var curInfoBox = allPosts[J].querySelector("div.msg_infobox");
+    
+    curInfoBox.appendChild(curOptions);
+    }
 
-$.alt('Z', function() {
-    document.querySelector('input.btn.btn_primary').click();
-});
+function addGlobalStyle(css) {
+    var head, style;
+    head = document.getElementsByTagName('head')[0];
+    if (!head) { return; }
+    style = document.createElement('style');
+    style.type = 'text/css';
+    style.innerHTML = css;
+    head.appendChild(style);
+}
+
+addGlobalStyle('span.postaction { margin-left: 5px ! important; }');
