@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         GameFAQs Alt+Z Hotkey
 // @namespace    gfaqs_hotkey
-// @version      1.0.1
+// @version      1.0.2
 // @description  GameFAQs hotkey to post message or submit edit
 // @author       Littlegator
 // @grant        none
+// @require     http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js
+// @require     https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js
 // @downloadURL http://gates.coffee/gfaqs_hotkey.user.js
 // @include http://www.gamefaqs.com/boards/*
 // ==/UserScript==

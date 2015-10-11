@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         GameFAQs Move Message Options
 // @namespace    gfaqs_movoptions
-// @version      1.5
+// @version      1.5.1
 // @description  Moves the links for delete, close, edit, report to post header
 // @author       Littlegator
 // @grant        none
+// @require     http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js
+// @require     https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js
 // @downloadURL http://gates.coffee/gfaqs_move_msg_options.user.js
 // @include http://www.gamefaqs.com/boards/*
 // ==/UserScript==
@@ -59,7 +61,7 @@ function addGlobalStyle(css) {
     head.appendChild(style);
 }
 
-addGlobalStyle('span.postaction { margin-right: 5px ! important; }');
+addGlobalStyle('span.postaction { margin-left: 5px ! important; margin-right: 5px ! important;}');
 addGlobalStyle('span.options { float: right ! important; }');
 addGlobalStyle('div.newbeta { margin-top: 3px ! important; }');
 addGlobalStyle('div.newbeta { margin-bottom: 3px ! important; }');

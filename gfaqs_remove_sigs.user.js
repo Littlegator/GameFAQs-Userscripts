@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         GameFAQs Remove Signatures
 // @namespace    gfaqs_remsigs
-// @version      1.2.1
+// @version      1.2.2
 // @description  GameFAQs new message format, remove signatures
 // @author       Littlegator
 // @grant        none
+// @require     http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js
+// @require     https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js
 // @downloadURL http://gates.coffee/gfaqs_remove_sigs.user.js
 // @include http://www.gamefaqs.com/boards/*
 // ==/UserScript==
