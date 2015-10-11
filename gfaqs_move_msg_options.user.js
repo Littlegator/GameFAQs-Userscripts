@@ -59,6 +59,7 @@ function addGlobalStyle(css) {
     head.appendChild(style);
 }
 
-addGlobalStyle('span.postaction { margin-left: 5px ! important; }');
+addGlobalStyle('span.postaction { margin-right: 5px ! important; }');
+addGlobalStyle('span.options { float: right ! important; }');
 addGlobalStyle('div.newbeta { margin-top: 3px ! important; }');
 addGlobalStyle('div.newbeta { margin-bottom: 3px ! important; }');
