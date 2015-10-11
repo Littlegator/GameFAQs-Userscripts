@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GameFAQs Move Message Options
 // @namespace    gfaqs_movoptions
-// @version      1.4
+// @version      1.5
 // @description  Moves the links for delete, close, edit, report to post header
 // @author       Littlegator
 // @grant        none
